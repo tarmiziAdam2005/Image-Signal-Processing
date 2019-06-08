@@ -2,7 +2,8 @@ clc;
 clear all;
 close all;
 
-% Created on 3/07/2017 by Tarmizi Adam
+% First Created on 3/07/2017 by Tarmizi Adam
+% Update History : 8/6/2019,
 % Demo for robust principal component analysis (RPCA) using ADMM
 % Uses the ADMM/ADM algorithm to solve the the pricipal component pursuit:
 %
@@ -16,13 +17,13 @@ close all;
 
 Img = imread('peppers.bmp');
 
-sigma = 0.1;
+sigma = 0.2; %density of the noise
 Img_n = imnoise(Img,'salt & pepper',sigma);
 Img_n = double(Img_n);
 
 %% ==================== Parameter options =====================
 
-opts.lam       = 0.068; % Regularization parameter
+opts.lam       = 0.053; % Regularization parameter
 opts.Nit       = 1000;  % Algorithm iteration
 opts.tol       = 1.0e-5; %Stopping criterion value
 opts.rho      = 0.05;    % Regularization param of ADMM constraint

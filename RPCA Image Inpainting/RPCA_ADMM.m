@@ -39,14 +39,14 @@ for i = 1:opts.Nit
     
     % L subproblem
     X = M + Mu./rho;
-    L = svt(X - S , 1/rho); %Solve for L, by singular value thresholding
+    L = svt(X-S , 1/rho); %Solve for L, by singular value thresholding
     
     % S subproblem
-    S = shrink(X - L, lam/rho); %Solve for S by soft thresholding
+    S = shrink(X-L, lam/rho); %Solve for S by soft thresholding
     
-    Mu = Mu + rho*(M - L - S); %Update our Lagrange multipliers
+    Mu = Mu - rho*(L+S-M); %Update our Lagrange multipliers
     
-    E_r = M - L - S;
+    E_r = L+S-M;
     
     relError(i)    = norm(E_r,'fro')/norm(M, 'fro');
     
