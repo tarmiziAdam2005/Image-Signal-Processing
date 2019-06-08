@@ -1,6 +1,7 @@
 function out = RPCA_ADMM(M,opts)
 
 % Created by Tarmizi Adam on 2/06/2017
+% Update: 8/6/2019
 %This is a simple program for Robust Principal Component Analysis (RPCA)
 %for Image inpainting (restoring missing pixels values). The iterative algorithm used in this program is the 
 % Alternating Direction Methods of Multiplier (ADMM) which is a splitting
