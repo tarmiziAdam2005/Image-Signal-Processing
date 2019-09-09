@@ -2,7 +2,7 @@ function out = gstv2d_imp(f,Img,K,opts)
 % Created on 31/8/2019 by Tarmizi Adam
 % Version 1.1
 % Overlapping Group Sparse TV + ADMM for removing blur with salt and pepper noise
-%re-implementation of the paper:
+% implementation of the paper:
 % "Total Variation with Overlapping GroupSparsity for 
 %  "Image Deblurring under Impulse Noise, 2015, Gang Liu et.al., Plos One
 
