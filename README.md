@@ -11,3 +11,5 @@ Some of the codes included are:
 5. Robust Principal Componant Analysis (RPCA) for sparse noise restoration (impulse noise). Solved using ADMM.
 6. Low rank matrix completion (LRMC) using ADMM. Example code is applied for missing pixel image restoration (Inpainting).
 7. The state-of-the-art L0-TV by Yuan and Ghanem for impulse noise restoration (using pure ADMM).
+
+If you find any mistakes or bugs, Please DO NOT HESITATE to contact me ! at tarmizi_adam2005@yahoo.com.
